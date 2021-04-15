@@ -1,0 +1,72 @@
+[
+  {
+    "name": "index___ar",
+    "path": "/ar",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4eccc905"
+  },
+  {
+    "name": "starter-page___en",
+    "path": "/starter-page",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\starter-page.vue",
+    "chunkName": "pages/starter-page",
+    "_name": "_7a836e2a"
+  },
+  {
+    "name": "starter-page___ar",
+    "path": "/ar/starter-page",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\starter-page.vue",
+    "chunkName": "pages/starter-page",
+    "_name": "_7a836e2a"
+  },
+  {
+    "name": "bhxh-bat-buoc___en",
+    "path": "/bhxh/bat-buoc",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\bhxh\\\\bat-buoc.vue",
+    "chunkName": "pages/bhxh/bat-buoc",
+    "_name": "_6f3315b2"
+  },
+  {
+    "name": "bhxh-tu-nguyen___en",
+    "path": "/bhxh/tu-nguyen",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\bhxh\\\\tu-nguyen.vue",
+    "chunkName": "pages/bhxh/tu-nguyen",
+    "_name": "_e2bb0262"
+  },
+  {
+    "name": "GeneralViews-NotFoundPage___en",
+    "path": "/GeneralViews/NotFoundPage",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "chunkName": "pages/GeneralViews/NotFoundPage",
+    "_name": "_c5ad47be"
+  },
+  {
+    "name": "bhxh-bat-buoc___ar",
+    "path": "/ar/bhxh/bat-buoc",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\bhxh\\\\bat-buoc.vue",
+    "chunkName": "pages/bhxh/bat-buoc",
+    "_name": "_6f3315b2"
+  },
+  {
+    "name": "bhxh-tu-nguyen___ar",
+    "path": "/ar/bhxh/tu-nguyen",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\bhxh\\\\tu-nguyen.vue",
+    "chunkName": "pages/bhxh/tu-nguyen",
+    "_name": "_e2bb0262"
+  },
+  {
+    "name": "GeneralViews-NotFoundPage___ar",
+    "path": "/ar/GeneralViews/NotFoundPage",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\GeneralViews\\\\NotFoundPage.vue",
+    "chunkName": "pages/GeneralViews/NotFoundPage",
+    "_name": "_c5ad47be"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "D:\\\\Nam4\\\\Ki2\\\\DamBaoChatLuogPhanMem\\\\bhxh_fe\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4eccc905"
+  }
+]
