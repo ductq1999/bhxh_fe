@@ -51,7 +51,7 @@
           />
           <datalist id="my-list-id">
             <option v-for="(size, index) in allBhxh" :key="index">
-              {{ size.id + " " + size.name }}
+              {{ size.id + "-" + size.name }}
             </option>
           </datalist>
         </div>
@@ -159,7 +159,7 @@ export default {
           fullName: this.citizen.fullName,
           address: this.citizen.address,
           socialInsurance: {
-            id: this.citizen.socialInsuranceId.split(" ")[0],
+            id: this.citizen.socialInsuranceId.split("-")[0],
           },
           user: {
             id: 1,

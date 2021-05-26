@@ -26,11 +26,11 @@
           />
         </div>
       </div>
-       <div class="form-group row">
+      <div class="form-group row">
         <label class="col-sm-2 col-form-label">Doanh nghiệp</label>
         <div class="col-sm-10">
           <input
-          list="my-list-id2"
+            list="my-list-id2"
             type="text"
             class="form-control"
             v-model="citizen.enterprise"
@@ -74,7 +74,16 @@
           </datalist>
         </div>
       </div>
-
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Loại lao động</label>
+        <div class="col-sm-10">
+          <b-form-select
+            v-model="type"
+            :options="options"
+            class="form-control"
+          ></b-form-select>
+        </div>
+      </div>
       <div class="form-group row">
         <label class="col-sm-2 col-form-label">Lương</label>
         <div class="col-sm-10">
@@ -88,24 +97,12 @@
         </div>
       </div>
 
-       <div class="form-group row">
+      <div class="form-group row">
         <label class="col-sm-2 col-form-label">Doanh nghiệp phải đóng</label>
         <div class="col-sm-10">
           <b-form-input
             type="number"
             v-model="dn"
-            class="form-control"
-            disabled
-          ></b-form-input>
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Cá nhân phải đóng</label>
-        <div class="col-sm-10">
-          <b-form-input
-            type="number"
-            v-model="cn"
             class="form-control"
             disabled
           ></b-form-input>
@@ -135,21 +132,29 @@ export default {
       },
       salary: 0,
       dn: 0,
-      cn: 0,
+      type: null,
+      options: [
+        {value: null, text: 'Chọn loại lao động'},
+        { value: 1, text: "Lao động trong nước" },
+        { value: 2, text: "Lao động nước ngoài" },
+      ],
       errors: [],
       l: [1490000, 29800000],
     };
   },
   watch: {
-      salary: function (val) {
-      this.dn = val*32/100
-      this.cn = val*10.5/100
+    salary: function (val) {
+      if (this.type === 2) {
+        this.dn = (val * 8) / 100;
+      } else {
+        this.dn = (val * 32) / 100;
+      }
     },
   },
   computed: {
     ...mapGetters({
       allBhxh: "bhxh/getAll",
-      allEnterPrise: "bhxh/getAllE"
+      allEnterPrise: "bhxh/getAllE",
     }),
     ...mapState({}),
   },
@@ -218,11 +223,14 @@ export default {
               variant: "success",
             });
           } else {
-            this.$bvToast.toast(`Lỗi mạng hoặc đã tồn tại thông tin bảo hiểm!`, {
-              title: "Thông báo",
-              autoHideDelay: 5000,
-              variant: "danger",
-            });
+            this.$bvToast.toast(
+              `Lỗi mạng hoặc đã tồn tại thông tin bảo hiểm!`,
+              {
+                title: "Thông báo",
+                autoHideDelay: 5000,
+                variant: "danger",
+              }
+            );
           }
         });
       }
