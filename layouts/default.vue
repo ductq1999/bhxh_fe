@@ -21,6 +21,13 @@
             path: '/bhxh/bat-buoc'
           }"
         ></sidebar-item>
+        <sidebar-item
+          :link="{
+            name: $t('Đóng tiền'),
+            icon: 'tim-icons icon-single-02',
+            path: '/bhxh/dong-tien'
+          }"
+        ></sidebar-item>
       </template>
     </side-bar>
     <!--Share plugin (for demo purposes). You can remove it if don't plan on using it-->

@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <button class="btn btn-primary" @click="addBuses">Submit</button>
+      <button class="btn btn-primary" @click="add">Submit</button>
       <div v-if="errors.length">
         <div class="validation-error mb-3" style="color: red">
           <div v-for="(error, index) in errors" :key="index">{{ error }}</div>
@@ -190,7 +190,7 @@ export default {
       }
       e.preventDefault();
     },
-    async addBuses() {
+    async add() {
       if (this.checkForm()) {
         let data = {
           identityNumber: this.citizen.identityNumber,
@@ -213,6 +213,8 @@ export default {
           pc5: 0,
           pc6: 0,
           pc7: 0,
+          type: this.type,
+          isPayment: 0
         };
 
         await this.$axios.$post("citizen/create", data).then((response) => {
